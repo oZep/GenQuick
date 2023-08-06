@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+        href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>GeeksforGeeks</h1>
+        <p>A computer science portal for geeks</p>
+    </div>
+        <div class="progress"> <!-- Using different classes for each color and for type of line-->
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+        </div>
+        </div>
+    <div class="progress">
+	<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+	</div>
+    </div>
+
+    <!--Jumbotron is a big grey box used to indicate some text which require extra attention-->
+    <div class="container">
+    <div class="jumbotron">
+        <h1>Jumbotron</h1>
+        <p>This is a Jumbotron.</p>
+    </div>
+</div>
+<!--Rows must be placed within a ‘container’ or ‘container-fluid’-->
+    <div class="container">
+        <div class="row">
+            <div class="bg bg-primary w-100">
+                First row
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg bg-success w-100">
+                Second row
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg bg-primary w-100">
+                Third row
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg bg-success w-100">
+                Fourth row
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg bg-primary w-100">
+                Fifth row
+            </div>
+        </div>
+    </div>
+
+        <br/> <!--Break-->
+<!-- Grid columns are created by specifying the number of twelve available columns you wish to span-->
+    <div class="container"> 
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="well bg bg-danger">
+                    1st Column
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="well bg bg-warning">
+                    2nd Column
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="well bg bg-secondary">
+                    3rd Column
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- We can build even more dynamic and powerful layouts with using more than one choice for columns-->
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-6 col-md-3 
+                    col-lg-4 col-xl-6">
+                <div class="well bg bg-success">
+                    First Column
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-6 col-md-3 
+                    col-lg-4 col-xl-6">
+                <div class="well bg bg-danger">
+                    Second Column
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-6 col-md-3 
+                    col-lg-4 col-xl-6">
+                <div class="well bg bg-warning">
+                    Third Column
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-6 col-md-3 
+                    col-lg-4 col-xl-6">
+                <div class="well bg bg-primary">
+                    Fourth Column
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        Column Resets
+        WHEN: columns don’t quite clear right as one is taller (has more text) than the other column
+        FIX: clearfix
+        HOW: div command with class clearfix after the block where the column isn’t clearing right.
+    -->
+    <!-- Columns Offset: We can move the columns to the right by x columns using  col-md-offset-x in the class.-->
+    <!--
+        Nesting Columns: For nesting columns within a column, we need to add a new row and set of columns. 
+        Should include a set of columns that add up to 12 or less than that.
+    -->
+        <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-6 col-md-3 
+                    col-lg-4 col-xl-6">
+                <div class="bg bg-success">
+                    First Column
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-6 col-md-3 
+                    col-lg-4 col-xl-6">
+                <div class="bg bg-danger">
+                    second Column
+                    <div class="row">
+                        <div class="col-md-3 col-lg-4 col-xl-6">
+                            <div class="bg bg-success">
+                                First Nested Column
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-xl-6">
+                            <div class="bg bg-primary">
+                                Second Nested Column
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Size Reference
+xs (<576px): For Portrait Mobile Phones.
+sm (>=576px): For Landscapes phones
+md (>=768px): For Tablets/Phablets
+lg (>=992px): For Small-sized Desktops/Laptops
+xl (>=1200px): For Larger-sized Desktops/Laptops
+-->
+
+    <footer>
+        <hr/> <!--Page Break line-->
+        <div class="container">
+            <p>
+                <a href="https://www.geeksforgeeks.org/">
+                    Visit 
+                </a> 
+                our website
+            </p>
+            <p>
+                <a href="https://www.geeksforgeeks.org/">
+                    Like 
+                </a>
+                us on facebook
+            </p>
+        </div>
+    </footer>
+</html>
