@@ -9,3 +9,16 @@ buttons.forEach((button) => {
     window.open(url, '_blank');
   });
 });
+
+// Get all link buttons with the specified class namely for the subheaders   this is all to replace <a>
+const linkButtons = document.querySelectorAll('.link-button');
+
+// Add click event listener to each link button
+linkButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const url = button.getAttribute('data-url');
+    if (url) {
+      window.open(url, '_blank');
+    }
+  });
+});
