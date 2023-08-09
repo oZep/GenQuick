@@ -19,3 +19,4 @@ A chrome extension that enable Genshin Impact speedrunners to have access to eve
 - Quick Access to the most commonly used acheivement tracker
 - A live countdown of when the current banner ends
 
+<img width="274" alt="Screenshot 2023-08-08 at 9 10 22 PM" src="https://github.com/oZep/GenQuick/assets/97713154/7736e64c-9d03-4789-943b-d6ca68805592">
