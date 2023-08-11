@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/js/content.js"]
+      "js": ["src/js/content.js", "src/js/countdown.js"]
     }
   ]
 }
